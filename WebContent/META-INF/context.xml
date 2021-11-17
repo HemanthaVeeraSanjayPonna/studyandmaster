@@ -1,0 +1,10 @@
+<Context reloadable="true" privileged="true">
+<WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+  <Resource name="jdbc/sanjaystudyandmaster" global="jdbc/sanjaystudyandmaster" 
+  			auth="Container" type="javax.sql.DataSource"
+               maxActive="20" maxIdle="5" maxWait="10000"
+               driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://us-cdbr-east-02.cleardb.com/heroku_5030f3b3462da10?reconnect=true?allowPublicKeyRetrieval=true"/>
+
+</Context>
